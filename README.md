@@ -13,3 +13,5 @@
 + SequenceIfAll: n個の連続するシーケンスのうち、すべてある値であるものを求める
 + SetEqual: `(要求するitem) \equal (グループ内にあるitem)`となるグループを列挙する
 + Subset: `(要求するitem) \subset (店舗にあるitem)`(要求するitemをすべて持つ)となるグループを列挙する
++ GetPrimes: 素数列を求める
++ fib: フィボナッチ数列を求める
