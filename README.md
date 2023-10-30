@@ -15,3 +15,4 @@
 + Subset: `(要求するitem) \subset (店舗にあるitem)`(要求するitemをすべて持つ)となるグループを列挙する
 + GetPrimes: 素数列を求める
 + fib: フィボナッチ数列を求める
++ RowNumberGroup: グループごとに各要素に連番を割り振る
