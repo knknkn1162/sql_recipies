@@ -16,3 +16,7 @@
 + GetPrimes: 素数列を求める
 + fib: フィボナッチ数列を求める
 + RowNumberGroup: グループごとに各要素に連番を割り振る
++ fizzbuzz: fizzbuzzを解く
++ LeadLag: Rでいうlead() or lag()をSQLで実装する
++ GetGroupIfs: 各グループごとに、すべての要素が複数の条件をみたすグループを列挙する
++ MaxBy: 各グループごとに最大値を取る行を取得する
