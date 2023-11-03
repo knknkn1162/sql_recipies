@@ -22,5 +22,6 @@
 + MaxBy: 各グループごとに最大値を取る行を取得する
 + SecondBiggest: 各グループごとに2番目に大きい要素を取得する
 + MultipleHaving: 複数のhaving条件の実装
++ MUltipleColumnIf: 複数の列に対しての全てみたす/部分的に/どれか満たす条件を実装
 + TreeStructure: 入れ子集合モデルサンプル
     + 参考) https://mickindex.sakura.ne.jp/database/db_tree_ns.html
