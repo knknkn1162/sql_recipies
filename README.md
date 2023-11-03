@@ -11,8 +11,8 @@
 + NotExists: 各グループごとに、すべてのレコード内の要素A(nullもありうる)がある値となるグループを列挙する
 + PrevRows: レコードの値が一つ前のレコードと同じようなものを列挙する
 + SequenceIfAll: n個の連続するシーケンスのうち、すべてある値であるものを求める
-+ SetEqual: `(要求するitem) \equal (グループ内にあるitem)`となるグループを列挙する
-+ Subset: `(要求するitem) \subset (店舗にあるitem)`(要求するitemをすべて持つ)となるグループを列挙する
++ SetEqual: [厳密な関係除算]`(要求するitem) \equal (グループ内にあるitem)`となるグループを列挙する
++ Subset: [関係除算]`(要求するitem) \subset (店舗にあるitem)`(要求するitemをすべて持つ)となるグループを列挙する
 + GetPrimes: 素数列を求める
 + fib: フィボナッチ数列を求める
 + RowNumberGroup: グループごとに各要素に連番を割り振る
