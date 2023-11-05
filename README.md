@@ -4,7 +4,8 @@
 + AllNotNull: 各グループごとに、グループ内の全てのレコードがnot nullであるようなグループを列挙する
 + CalcMode: mode(最頻値)をもとめる
 + CompleteData: tidyverseでいう[complete](https://tidyr.tidyverse.org/reference/complete.html)のようなことをする
-+ CrossTabulation: [行 -> 列変換問題] 縦持ちのテーブルからクロス表を作成する
++ PivotWider: [行持ち -> 列持ち] 縦持ちのテーブルからクロス表を作成する(Rの`pivot_wider`相当)
++ PvotLonger: [列持ち -> 行持ち] 変換(Rの`pivot_longer`相当)
 + DetectMissingNumbers: 数列から欠番を見つける
 + ExtractDuplicate: 完全に重複する要素を抜き出したい(その後にその要素を消すため)
 + ExtractPartiallyDuplicate: 各グループごとに、ターゲット要素が重複しているグループ名を列挙する
