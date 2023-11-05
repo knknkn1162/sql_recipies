@@ -26,5 +26,6 @@
 + MinMax: グループごとに条件を満たすような最も大きいvalueの要素を取得する
 + FindMissing: missingの要素を見つける
 + SetEquivalence: [集合の相等性] 数も種類も全く同じ部品を取り扱う供給業者のペアを見つける
++ CoalesceRecipes: coalesce関数のレシピ集
 + TreeStructure: 入れ子集合モデルサンプル
     + 参考) https://mickindex.sakura.ne.jp/database/db_tree_ns.html
