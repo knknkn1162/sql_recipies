@@ -30,5 +30,6 @@
 + SetEquivalence: [集合の相等性] 数も種類も全く同じ部品を取り扱う供給業者のペアを見つける
 + CoalesceRecipes: coalesce関数のレシピ集
 + GroupJoin: 各categoryについて、複数のテーブルをjoinして複数の指標をだす
++ UpdateAllAtOnce: 複数行でそれぞれ異なる値にupdateする
 + TreeStructure: 入れ子集合モデルサンプル
     + 参考) https://mickindex.sakura.ne.jp/database/db_tree_ns.html
