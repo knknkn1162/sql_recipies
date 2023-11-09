@@ -31,8 +31,9 @@
 + CoalesceRecipes: coalesce関数のレシピ集
 + GroupJoin: 各categoryについて、複数のテーブルをjoinして複数の指標をだす
 + UpdateAllAtOnce: 複数行でそれぞれ異なる値にupdateする
-+ MultipleJoin
++ MultipleJoin: 複数のテーブルの結合をうまくやる
 + WhereIn: where inが効果的に使える例
++ TopN: 各グループで上位n位のリストをもとめる
 + TreeStructure: 入れ子集合モデルサンプル
     + 参考) https://mickindex.sakura.ne.jp/database/db_tree_ns.html
 
