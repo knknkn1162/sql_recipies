@@ -8,6 +8,7 @@
 + PivotWider: [行持ち -> 列持ち] 縦持ちのテーブルからクロス表を作成する(Rの`pivot_wider`相当)
 + PivotWiderSummary: [行持ち -> 列持ち] 縦持ちのテーブルをもとに集計する
 + DetectMissingNumbers: 数列から欠番を見つける
++ CountRecipes: (havingの中の)`count(*)`, `count(col1)`, `count(distinct col1)`の利用例
 + ExtractDuplicate: 完全に重複する要素を抜き出したい(その後にその要素を消すため)
 + ExtractPartiallyDuplicate: 各グループごとに、ターゲット要素が重複しているグループ名を列挙する
 + NotExists: 各グループごとに、すべてのレコード内の要素A(nullもありうる)がある値となるグループを列挙する
@@ -34,6 +35,4 @@
 + MultipleJoin: 複数のテーブルの結合をうまくやる
 + WhereIn: where inが効果的に使える例
 + TopN: 各グループで上位n位のリストをもとめる
-+ TreeStructure: 入れ子集合モデルサンプル
-    + 参考) https://mickindex.sakura.ne.jp/database/db_tree_ns.html
-
++ TreeStructure: 閉包テーブルの例
