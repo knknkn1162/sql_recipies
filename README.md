@@ -31,6 +31,7 @@
 + SetEquivalence: [集合の相等性] 数も種類も全く同じ部品を取り扱う供給業者のペアを見つける
 + CoalesceRecipes: coalesce関数のレシピ集
 + GroupJoin: 各categoryについて、複数のテーブルをjoinして複数の指標をだす
++ GroupConcat: 各グループの要素たちを文字列連結する
 + UpdateAllAtOnce: 複数行でそれぞれ異なる値にupdateする
 + MultipleJoin: 複数のテーブルの結合をうまくやる
 + WhereIn: where inが効果的に使える例
