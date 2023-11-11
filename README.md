@@ -36,5 +36,6 @@
 + MultipleJoin: 複数のテーブルの結合をうまくやる
 + WhereIn: where inが効果的に使える例
 + OverlapsDateRange: 期間の重複に関連するレシピ集
++ ReciprocalPair: (4,6), (6,4)のような対を同一視した結果を取得する
 + TopN: 各グループで上位n位のリストをもとめる
 + TreeStructure: 閉包テーブルの例
