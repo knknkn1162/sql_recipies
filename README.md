@@ -62,7 +62,9 @@
     + 前者の条件はT1 < T2, 後者の条件はT2 < T1
 + 2つの期間が隣接する: `((T1.end_time = T2.start_time) or (T2.end_time = T1.start_time)`
     + 前者の条件はT1 <= T2, 後者の条件は T2 <= T1
-+ T2がT1に含まれる: `((T1.start_time <= T2.start_time) and (T2.end_time <= T1.end_time))`
++ T2がT1に含まれる(包含): `((T1.start_time <= T2.start_time) and (T2.end_time <= T1.end_time))`
     + T2 \subset T1
 + T1とT2がオーバーラップする: `(T1.start_time, T1.end_time) overlaps (T2.start_time, T2.end_time)`
-    + 
+    + 隣接は含まない
+        + 隣接する場合も含めたいときは、`((T1.end_time >= T2.start_time) and (T1.start_time <= T2.end_time))`
+    + 競技のオーバーラップ(はみでる)タイプと包含タイプがある
