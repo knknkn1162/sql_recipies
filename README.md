@@ -39,3 +39,18 @@
 + ReciprocalPair: (4,6), (6,4)のような対を同一視した結果を取得する
 + TopN: 各グループで上位n位のリストをもとめる
 + TreeStructure: 閉包テーブルの例
+
+# misc
+
+### 集約時に集合の性質を調べるための条件の使い方
+
+|expr|remarks|
+|---|---|
+|`count(distinct col) = count(col)`|colの値が一意(重複なし)である|
+|`count(*) = count(col)`|colにNULLが存在しない|
+|`count(*) = max(col) - min(col)+1`|colは連番|
+|`min(col) = max(col)`|colは同じ値またはすべてnull|
+|`max(col) * min(col) > 0`|すべての符号(sign)が同じ|
+|`max(col) * min(col) < 0`|どこかで0で交わる|
+|`min(abs(col)) = 0`|colは少なくとも1の0を含む|
+|`max(abs(col)) = 0`|colは全て0|
