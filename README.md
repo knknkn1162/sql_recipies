@@ -35,5 +35,6 @@
 + UpdateAllAtOnce: 複数行でそれぞれ異なる値にupdateする
 + MultipleJoin: 複数のテーブルの結合をうまくやる
 + WhereIn: where inが効果的に使える例
++ OverlapsDateRange: 期間の重複に関連するレシピ集
 + TopN: 各グループで上位n位のリストをもとめる
 + TreeStructure: 閉包テーブルの例
