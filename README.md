@@ -37,12 +37,13 @@
 + WhereIn: where inが効果的に使える例
 + OverlapsDateRange: 期間の重複に関連するレシピ集
 + ReciprocalPair: (4,6), (6,4)のような対を同一視した結果を取得する
++ Cut: Rの`cut`相当のことをする
 + TopN: 各グループで上位n位のリストをもとめる
 + TreeStructure: 閉包テーブルの例
 
 # misc
 
-### 集約時に集合の性質を調べるための条件の使い方
+## 集約時に集合の性質を調べるための条件の使い方
 
 |expr|remarks|
 |---|---|
@@ -54,3 +55,14 @@
 |`max(col) * min(col) < 0`|どこかで0で交わる|
 |`min(abs(col)) = 0`|colは少なくとも1の0を含む|
 |`max(abs(col)) = 0`|colは全て0|
+
+## 期間同士の関係
+
++ T1とT2はオーバーラップしない: `((T1.end_time < T2.start_time) or (T1.start_time > T2.end_time))`
+    + 前者の条件はT1 < T2, 後者の条件はT2 < T1
++ 2つの期間が隣接する: `((T1.end_time = T2.start_time) or (T2.end_time = T1.start_time)`
+    + 前者の条件はT1 <= T2, 後者の条件は T2 <= T1
++ T2がT1に含まれる: `((T1.start_time <= T2.start_time) and (T2.end_time <= T1.end_time))`
+    + T2 \subset T1
++ T1とT2がオーバーラップする: `(T1.start_time, T1.end_time) overlaps (T2.start_time, T2.end_time)`
+    + 
