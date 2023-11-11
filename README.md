@@ -17,7 +17,7 @@
 + SetEqual: [厳密な関係除算] `(要求するitem) \equal (グループ内にあるitem)`となるグループを列挙する
 + Subset: [関係除算] `(要求するitem) \subset (店舗にあるitem)`(要求するitemをすべて持つ)となるグループを列挙する
 + GetPrimes: 素数列を求める
-+ fib: フィボナッチ数列を求める
++ ConsecutiveId: Rの`consecutive_id`相当のことを行う
 + RowNumberGroup: グループごとに各要素に連番を割り振る
 + fizzbuzz: fizzbuzzを解く
 + LeadLag: Rでいうlead() or lag()をSQLで実装する
