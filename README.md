@@ -68,3 +68,14 @@
     + 隣接は含まない
         + 隣接する場合も含めたいときは、`((T1.end_time >= T2.start_time) and (T1.start_time <= T2.end_time))`
     + 競技のオーバーラップ(はみでる)タイプと包含タイプがある
+ 
+## 関係演算
++ 制限(Restrict): `where`
++ 射影(Project): `select`
++ 積(Product): `cross join`
++ 和(Union): `union`
++ 交差(Intersect): `intersect`
++ 差(Difference): `except`
++ 結合(Join): `(inner/left/right/full) join`
+    + 積と制限の2つで表せる
++ 除算(Divide): `having` or `except`
