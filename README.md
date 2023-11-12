@@ -40,6 +40,7 @@
 + ReciprocalPair: (4,6), (6,4)のような対を同一視した結果を取得する
 + Cut: Rの`cut`相当のことをする
 + TopN: 各グループで上位n位のリストをもとめる
++ Median: 中央値を求める
 + WithCheckOption: ビューの`with check option`句のレシピ。
 + TreeStructure: 閉包テーブルの例
 
