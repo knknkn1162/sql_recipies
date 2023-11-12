@@ -25,6 +25,7 @@
 + MaxBy: 各グループごとに最大値を取る行を取得する
 + SecondBiggest: 各グループごとに2番目に大きい要素を取得する
 + MultipleHaving: 複数のhaving条件の実装
++ TwoPhasedAggregate: 二段階の集約を使う場合のスマートな実装
 + MUltipleColumnIf: 複数の列に対しての全てみたす/部分的に/どれか満たす条件を実装
 + MinMax: グループごとに条件を満たすような最も大きいvalueの要素を取得する
 + FindMissing: missingの要素を見つける
