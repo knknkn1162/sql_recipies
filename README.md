@@ -43,6 +43,33 @@
 
 # misc
 
+## NULLについて
+
+| unary | 非NULL | NULL |
+| --- | --- | --- |
+| nullif(x,x) | NULL | NULL |
+| nullif(0, (x-x)) | NULL | 0 |
+| nullif(1, (x-x)) | NULL | 1 |
+
+| binary | AがNULL |
+| --- | --- |
+| A and B | NULL |
+| A or B | B |
+| A = B | NULL |
+| C in (A,B) | C=B |
+| C not in (A,B) | NULL |
+| where not exists (select ... where C = A) | True |
+| C < all(A,B) | NULL |
+| C < any(A,B) | C < B |
+
+### 対処法
++ not null制約をつけて極力nullを排除する
++ 極力デフォルト値で設定できないか検討する
+    + 未コード化用コードを割り振る(0: 未知, 9: 不能など)
+    + 名前の場合: 不明を表す値を与える
+    + 数値の場合: 0で代替する
+    + 日付の場合: 最大値・最小値で代替する
+
 ## 集約時に集合の性質を調べるための条件の使い方
 
 |expr|remarks|
