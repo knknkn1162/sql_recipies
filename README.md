@@ -23,7 +23,8 @@
 + LeadLag: Rでいうlead() or lag()をSQLで実装する
 + GetGroupIfs: 各グループごとに、すべての要素が複数の条件をみたすグループを列挙する
 + MaxBy: 各グループごとに最大値を取る行を取得する
-+ SecondBiggest: 各グループごとに2番目に大きい要素を取得する
++ Largest: 各グループごとに最も大きい要素を取得する
++ Largest2: 各グループごとに2番目に大きい要素を取得する
 + MultipleHaving: 複数のhaving条件の実装
 + TwoPhasedAggregate: 二段階の集約を使う場合のスマートな実装
 + MUltipleColumnIf: 複数の列に対しての全てみたす/部分的に/どれか満たす条件を実装
