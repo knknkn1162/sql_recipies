@@ -4,7 +4,7 @@
 + AllNotNull: 各グループごとに、グループ内の全てのレコードがnot nullであるようなグループを列挙する
 + CalcMode: mode(最頻値)をもとめる
 + CompleteData: tidyverseでいう[complete](https://tidyr.tidyverse.org/reference/complete.html)のようなことをする
-+ PvotLonger: [列持ち -> 行持ち] 変換(Rの`pivot_longer`相当)
++ PivotLonger: [列持ち -> 行持ち] 変換(Rの`pivot_longer`相当)
 + PivotWider: [行持ち -> 列持ち] 縦持ちのテーブルからクロス表を作成する(Rの`pivot_wider`相当)
 + PivotWiderSummary: [行持ち -> 列持ち] 縦持ちのテーブルをもとに集計する
 + DetectMissingNumbers: 数列から欠番を見つける
@@ -44,6 +44,13 @@
 + Median: 中央値を求める
 + WithCheckOption: ビューの`with check option`句のレシピ。
 + TreeStructure: 閉包テーブルの例
+
+# 動作方法
+
+```sh
+docker compose up
+# http://127.0.0.1:8888/lab でjupyter notebookが起動
+```
 
 # misc
 
